@@ -21,7 +21,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <div className="max-w-lg mx-auto relative min-h-screen">
           <Routes>
             <Route path="/" element={<HomeScreen />} />
